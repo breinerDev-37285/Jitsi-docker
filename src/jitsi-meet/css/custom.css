@@ -1,0 +1,27 @@
+.welcome-page-settings, #enter_room,.welcome-watermark,.welcome-cards-container{ 
+    display:none !important 
+}
+
+.header{
+    height: 100% !important;
+}
+
+.header-text-title,.header-text-subtitle{visibility: hidden }
+
+.header-text-title::after{
+    content: 'Gracias por participar en la reunion!';
+    visibility: visible;
+    display: block;
+    color:#fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:28
+}
+
+.header-text-subtitle::after{
+    content: 'Que tengas un gran día!';
+    visibility: visible;
+    display: block;
+    color:#fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20
+}

@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
     # Frontend
@@ -11,6 +11,7 @@ services:
         volumes:
             - ${CONFIG}/web:/config:Z
             - ${CONFIG}/transcripts:/usr/share/jitsi-meet/transcripts:Z
+            - $PWD/src/jitsi-meet:/usr/share/jitsi-meet
         environment:
             - ENABLE_LETSENCRYPT
             - ENABLE_HTTP_REDIRECT
